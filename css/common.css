@@ -1,0 +1,104 @@
+/* font */
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.8/dist/web/variable/pretendardvariable-dynamic-subset.css");
+
+/* icon */
+@import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200");
+@import url("https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: inherit;
+    font-weight: inherit;
+}
+
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+ul,
+ol,
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+body {
+    line-height: 1;
+    color: #333;
+    font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    word-break: keep-all;
+}
+
+.blind {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+}
+
+img {
+    vertical-align: middle;
+    max-width: 100%;
+}
+
+strong,
+b {
+    font-weight: normal;
+}
+
+em,
+address {
+    font-style: normal;
+}
+
+.sec {
+    padding: 100px 0;
+}
+
+.inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    /* padding: 0 15px; */
+}
+
+.f_inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    /* padding: 0 15px; */
+
+    display: flex;
+}
+
+.f_inner>* {
+    flex: 1;
+}
+
+/* 
+flex : 1 을 해보니, 편하긴한데
+단점하나가 푸터같이 크기가 일정하지않은 div가 많을때
+한번에 공간 정렬하기가 귀찮은것?
+
+.Footer .customer_content {
+    justify-content: space-between;
+}
+flex : 0 1 auto; 로 하면 된다.
+
+담엔 요걸로 해볼것.
+*/
+
+/* 
+button {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+} 요것도 추가해볼것. css에서 귀찮았음. 
+*/
